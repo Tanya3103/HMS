@@ -1,0 +1,95 @@
+.admin-users-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.admin-user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.admin-actions-bar {
+  display: flex;
+  gap: 12px;
+}
+
+.role-filter-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.role-filter-btn {
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border-subtle);
+  background: var(--color-surface-card);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.role-filter-btn:hover {
+  border-color: var(--color-primary);
+}
+
+.role-filter-btn.active {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  border-color: var(--color-primary);
+}
+
+.role-badge-tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  letter-spacing: 0.04em;
+}
+
+.role-doctor { background: #CCFBF1; color: #0F766E; }
+.role-staff { background: #DBEAFE; color: #1E40AF; }
+.role-patient { background: #EDE9FE; color: #6D28D9; }
+.role-admin { background: #FEE2E2; color: #DC2626; }
+
+.btn-toggle-user {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.btn-deactivate {
+  background: #FEF2F2;
+  color: #DC2626;
+  border-color: #FECACA;
+}
+
+.btn-deactivate:hover {
+  background: #DC2626;
+  color: #FFFFFF;
+}
+
+.btn-activate {
+  background: #ECFDF5;
+  color: #059669;
+  border-color: #A7F3D0;
+}
+
+.btn-activate:hover {
+  background: #059669;
+  color: #FFFFFF;
+}

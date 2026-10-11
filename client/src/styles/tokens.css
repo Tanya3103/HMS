@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* -------------------------------------------------------------
+     Brand / Primary Clinical Palette
+     ------------------------------------------------------------- */
+  --color-primary: #0F766E;          /* Teal-700: Professional clinical trust */
+  --color-primary-hover: #115E59;    /* Teal-800: High-contrast hover */
+  --color-primary-light: #CCFBF1;    /* Teal-100: Soft badge backgrounds */
+  --color-primary-accent: #14B8A6;   /* Teal-500: Active indicators, pulse rings */
+  --color-primary-glow: rgba(15, 118, 110, 0.18);
+
+  /* -------------------------------------------------------------
+     Neutral Surface & Background Tokens
+     ------------------------------------------------------------- */
+  --color-bg-base: #F8FAFC;          /* Slate-50: Crisp, clean clinic backdrop */
+  --color-surface-card: #FFFFFF;     /* Pure White: High-clarity elevated cards */
+  --color-surface-hover: #F1F5F9;    /* Slate-100: Table row & list hover */
+  --color-surface-sidebar: #FFFFFF;  /* Sidebar surface */
+  --color-border-subtle: #E2E8F0;    /* Slate-200: Low-contrast structural dividers */
+  --color-border-focus: #0F766E;     /* Focus outline ring */
+
+  /* -------------------------------------------------------------
+     Text & Typography Contrast Tokens
+     ------------------------------------------------------------- */
+  --color-text-primary: #0F172A;     /* Slate-900: Pure readability (14.2:1 contrast) */
+  --color-text-secondary: #475569;   /* Slate-600: Supporting labels and metadata */
+  --color-text-muted: #94A3B8;       /* Slate-400: Placeholders & inactive icons */
+  --color-text-inverse: #FFFFFF;     /* White text on dark/colored buttons */
+
+  /* -------------------------------------------------------------
+     Semantic Clinical Status Cues
+     ------------------------------------------------------------- */
+  --status-scheduled-bg: #EFF6FF;   /* Blue-50 */
+  --status-scheduled-text: #1D4ED8; /* Blue-700 */
+  --status-scheduled-dot: #2563EB;
+
+  --status-checkedin-bg: #ECFDF5;   /* Emerald-50 */
+  --status-checkedin-text: #047857; /* Emerald-700 */
+  --status-checkedin-dot: #10B981;
+
+  --status-inconsult-bg: #F5F3FF;   /* Purple-50 */
+  --status-inconsult-text: #6D28D9; /* Purple-700 */
+  --status-inconsult-dot: #8B5CF6;
+
+  --status-completed-bg: #F1F5F9;   /* Slate-100 */
+  --status-completed-text: #334155; /* Slate-700 */
+  --status-completed-dot: #64748B;
+
+  --status-danger-bg: #FEF2F2;      /* Red-50: Allergy tags, cancellations */
+  --status-danger-text: #B91C1C;    /* Red-700 */
+  --status-danger-dot: #EF4444;
+
+  --status-warning-bg: #FFFBEB;     /* Amber-50: Urgent reminders */
+  --status-warning-text: #B45309;   /* Amber-700 */
+  --status-warning-dot: #F59E0B;
+
+  /* -------------------------------------------------------------
+     8-Point Spacing Rhythm
+     ------------------------------------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* -------------------------------------------------------------
+     Border Radii
+     ------------------------------------------------------------- */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* -------------------------------------------------------------
+     Elevation & Shadow Hierarchy
+     ------------------------------------------------------------- */
+  --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
+  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.12), 0 8px 10px -6px rgba(15, 23, 42, 0.06);
+
+  /* -------------------------------------------------------------
+     Layout Coordinates
+     ------------------------------------------------------------- */
+  --sidebar-width: 250px;
+  --header-height: 64px;
+  --font-family-base: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

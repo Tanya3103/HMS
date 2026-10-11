@@ -1,0 +1,66 @@
+.offline-banner {
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  background: #FFFBEB;
+  border-bottom: 1.5px solid #F59E0B;
+  color: #B45309;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  box-shadow: var(--shadow-sm);
+  animation: slideDown 200ms ease forwards;
+}
+
+.offline-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.offline-icon {
+  color: #D97706;
+  flex-shrink: 0;
+}
+
+.offline-banner code {
+  background: rgba(245, 158, 11, 0.15);
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.btn-retry-offline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #F59E0B;
+  color: #FFFFFF;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-retry-offline:hover {
+  background: #D97706;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}

@@ -1,0 +1,287 @@
+.printable-rx-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #FFFFFF;
+  color: #0F172A;
+  padding: 12px;
+}
+
+.rx-letterhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.letterhead-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rx-logo-box {
+  width: 48px;
+  height: 48px;
+  background: #0F766E;
+  color: #FFFFFF;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hospital-name {
+  font-size: 17px;
+  font-weight: 800;
+  color: #0F766E;
+  letter-spacing: -0.01em;
+}
+
+.hospital-sub {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.hospital-contact {
+  font-size: 10px;
+  color: #94A3B8;
+}
+
+.rx-doc-block {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.rx-doc-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0F172A;
+}
+
+.rx-doc-license {
+  font-size: 11px;
+  color: #0F766E;
+  font-weight: 600;
+}
+
+.rx-doc-room {
+  font-size: 11px;
+  color: #64748B;
+}
+
+.rx-divider {
+  height: 2px;
+  background: #0F766E;
+  width: 100%;
+}
+
+.rx-patient-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+}
+
+.rx-patient-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.rx-lbl {
+  font-size: 10px;
+  font-weight: 700;
+  color: #64748B;
+  text-transform: uppercase;
+}
+
+.rx-val {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0F172A;
+}
+
+.font-mono {
+  font-family: monospace;
+}
+
+.rx-allergy-alert {
+  background: #FEE2E2;
+  border: 1px solid #FECACA;
+  color: #B91C1C;
+  font-size: 11px;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rx-vitals-box {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+}
+
+.rx-section-lbl {
+  font-size: 10px;
+  font-weight: 800;
+  color: #0F766E;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.rx-vitals-row {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+
+.rx-diagnosis-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.diag-heading {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0F172A;
+}
+
+.rx-notes-text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #334155;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+}
+
+.rx-table-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rx-symbol-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rx-symbol {
+  font-size: 26px;
+  font-weight: 800;
+  font-family: serif;
+  color: #0F766E;
+  line-height: 1;
+}
+
+.rx-table-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #0F766E;
+  text-transform: uppercase;
+}
+
+.official-rx-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  border: 1px solid #CBD5E1;
+}
+
+.official-rx-table th {
+  background: #F1F5F9;
+  text-align: left;
+  padding: 8px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+  border: 1px solid #CBD5E1;
+}
+
+.official-rx-table td {
+  padding: 8px 10px;
+  border: 1px solid #CBD5E1;
+}
+
+.rx-med-name {
+  font-weight: 700;
+  color: #0F172A;
+}
+
+.rx-signature-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 24px;
+  margin-top: 12px;
+}
+
+.rx-disclaimer {
+  font-size: 9px;
+  color: #94A3B8;
+  max-width: 300px;
+}
+
+.rx-signature-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.signature-line {
+  width: 180px;
+  height: 1px;
+  background: #0F172A;
+  margin-bottom: 4px;
+}
+
+.signature-name {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.signature-title {
+  font-size: 10px;
+  color: #64748B;
+}
+
+/* Print Overrides */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-rx-content, #printable-rx-content * {
+    visibility: visible;
+  }
+  #printable-rx-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+  .modal-backdrop {
+    background: transparent !important;
+  }
+  .modal-panel {
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .modal-header, .modal-footer {
+    display: none !important;
+  }
+}

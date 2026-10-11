@@ -1,0 +1,329 @@
+.book-appointment-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.booking-header h2 {
+  font-size: 22px;
+  color: var(--color-text-primary);
+}
+
+.stepper-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface-card);
+  padding: 16px 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-subtle);
+  gap: 16px;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.5;
+  transition: all var(--transition-fast);
+}
+
+.step-item.active {
+  opacity: 1;
+}
+
+.step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-surface-hover);
+  color: var(--color-text-secondary);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.step-item.active .step-num {
+  background: var(--color-primary);
+  color: #FFFFFF;
+}
+
+.step-item.completed .step-num {
+  background: #10B981;
+  color: #FFFFFF;
+}
+
+.step-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.step-connector {
+  flex: 1;
+  max-width: 80px;
+  height: 2px;
+  background: var(--color-border-subtle);
+}
+
+.step-card {
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.filter-dept-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+.dept-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.dept-pill {
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border-subtle);
+  background: var(--color-surface-card);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.dept-pill:hover {
+  border-color: var(--color-primary);
+}
+
+.dept-pill.active {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  border-color: var(--color-primary);
+}
+
+/* Doctor Selection Cards */
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.doctor-select-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-border-subtle);
+  background: var(--color-surface-card);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.doctor-select-card:hover {
+  border-color: var(--color-primary-accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.doctor-select-card.selected {
+  border-color: var(--color-primary);
+  background: #F0FDFA;
+}
+
+.doc-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.doc-details h4 {
+  font-size: 15px;
+  color: var(--color-text-primary);
+}
+
+.doc-dept {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: 2px;
+}
+
+.doc-spec {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-top: 4px;
+}
+
+.doc-extra {
+  display: flex;
+  gap: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-top: 8px;
+}
+
+.select-check {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  color: var(--color-primary);
+}
+
+/* Step 2 Split */
+.step2-split {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+}
+
+.date-picker-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.selected-doc-summary-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  background: var(--color-bg-base);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+/* Slot Chips Grid */
+.slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.slot-chip {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--color-border-subtle);
+  background: var(--color-surface-card);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.slot-chip:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.slot-chip.picked {
+  background: var(--color-primary) !important;
+  color: #FFFFFF !important;
+  border-color: var(--color-primary) !important;
+}
+
+.slot-chip.booked {
+  background: var(--color-surface-hover);
+  color: var(--color-text-muted);
+  border: 1px dashed var(--color-border-subtle);
+  cursor: not-allowed;
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Step 3 Summary */
+.booking-summary-box {
+  background: var(--color-bg-base);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: 20px;
+}
+
+.booking-summary-box h3 {
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.summary-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.summary-details-grid .label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+.summary-details-grid .val {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.reason-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.textarea-reason {
+  height: auto;
+  padding: 12px;
+  resize: vertical;
+}
+
+.step-nav-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+@media (max-width: 768px) {
+  .step2-split {
+    grid-template-columns: 1fr;
+  }
+}

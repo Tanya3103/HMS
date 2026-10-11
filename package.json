@@ -1,0 +1,22 @@
+{
+  "name": "carepulse-hms",
+  "version": "1.0.0",
+  "description": "Enterprise Hospital Management System (HMS) - Localhost On-Device Edition",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "seed": "npm run seed --prefix server",
+    "test:auth": "npm run test:auth --prefix server",
+    "test:features": "npm run test:features --prefix server",
+    "test:integrations": "npm run test:integrations --prefix server",
+    "benchmark:latency": "npm run benchmark:latency --prefix server",
+    "benchmark:concurrency": "npm run benchmark:concurrency --prefix server",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

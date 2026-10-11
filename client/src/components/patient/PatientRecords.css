@@ -1,0 +1,243 @@
+.patient-records-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.records-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.clinical-profile-strip {
+  display: flex;
+  gap: 24px;
+  background: var(--color-surface-card);
+  padding: 16px 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-subtle);
+  flex-wrap: wrap;
+}
+
+.strip-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.strip-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+.strip-val {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.blood-tag {
+  color: #DC2626;
+}
+
+.allergies-list {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.allergy-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #FEE2E2;
+  color: #B91C1C;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #FECACA;
+}
+
+/* Timeline */
+.encounters-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.encounter-card {
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.encounter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding-bottom: 14px;
+}
+
+.encounter-date {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.diagnosis-title {
+  font-size: 18px;
+  color: var(--color-text-primary);
+  margin-top: 2px;
+}
+
+.doc-signature {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+/* Vitals Strip */
+.vitals-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  background: var(--color-bg-base);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+}
+
+.vital-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vital-icon.bp { color: #DC2626; }
+.vital-icon.pulse { color: #E11D48; }
+.vital-icon.temp { color: #EA580C; }
+.vital-icon.spo2 { color: #0284C7; }
+
+.vital-lbl {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+.vital-val {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.clinical-notes-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.section-subtitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.notes-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  background: #FCFDFE;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-subtle);
+}
+
+/* Prescriptions */
+.prescriptions-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rx-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rx-icon {
+  color: var(--color-primary);
+}
+
+.rx-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.rx-table th {
+  background: var(--color-bg-base);
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.rx-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.empty-records-card {
+  background: var(--color-surface-card);
+  border: 1px dashed var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 48px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.empty-records-card .empty-icon {
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+}
+
+@media print {
+  body { background: #FFFFFF; }
+  .records-header button, .app-header, .app-sidebar { display: none !important; }
+  .encounter-card { box-shadow: none; border: 1px solid #000; break-inside: avoid; }
+}
